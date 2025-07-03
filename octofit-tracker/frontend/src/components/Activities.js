@@ -5,7 +5,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://verbose-goldfish-r47v44wv7v935xrr-8000.app.github.dev/api/activities')
+    fetch('https://verbose-goldfish-r47v44wv7v935xrr-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);
