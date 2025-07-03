@@ -5,7 +5,7 @@ function Teams() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://verbose-goldfish-r47v44wv7v935xrr-8000.app.github.dev/api/teams')
+    fetch('https://verbose-goldfish-r47v44wv7v935xrr-8000.app.github.dev/api/teams/')
       .then(response => response.json())
       .then(data => setTeams(data));
   }, []);

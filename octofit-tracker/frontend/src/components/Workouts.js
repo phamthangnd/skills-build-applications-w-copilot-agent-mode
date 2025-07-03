@@ -5,7 +5,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://verbose-goldfish-r47v44wv7v935xrr-8000.app.github.dev/api/workouts')
+    fetch('https://verbose-goldfish-r47v44wv7v935xrr-8000.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);
